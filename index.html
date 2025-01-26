@@ -32,19 +32,52 @@
       font-size: 1rem;
     }
 
-    /* Container for Power BI */
-    .container {
+    /* Navbar styling */
+    nav {
+      background: #005a9e;
+      color: white;
+      padding: 0.5rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section styling */
+    section {
       max-width: 1200px;
       margin: 2rem auto;
-      padding: 1rem;
+      padding: 1.5rem;
       background: white;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
     }
 
+    section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #0078d7;
+    }
+
+    section p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
     .container iframe {
       width: 100%;
-      height: 80vh; /* Adjust height as needed */
+      height: 80vh;
       border: none;
       border-radius: 4px;
     }
@@ -65,18 +98,207 @@
   </style>
 </head>
 <body>
+  <!-- Header -->
   <header>
     <h1>Power BI Dashboard</h1>
     <p>Interactive analytics at your fingertips</p>
   </header>
 
-  <div class="container">
-    <!-- Replace the iframe src below with your Power BI embed code -->
-    <iframe title="Years_UrbanPulse_Provincia_Web" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNjNmNDFkNDQtZDY2MC00OTU4LTkxZDMtZjRjNWNmOGVjMDMzIiwidCI6ImM5NDI0M2ViLTZmMGUtNDU2Ni1hMjk2LWI1ZGZjOWQyNTczYiIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
-  </div>
+  <!-- Navbar -->
+  <nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
+  <!-- Main Sections -->
+  <section id="dashboard">
+    <h2>Power BI Dashboard</h2>
+    <p>Explore your data with this interactive Power BI dashboard:</p>
+    <iframe title="Years_UrbanPulse_Provincia_Web" 
+            src="https://app.powerbi.com/view?r=eyJrIjoiNjNmNDFkNDQtZDY2MC00OTU4LTkxZDMtZjRjNWNmOGVjMDMzIiwidCI6ImM5NDI0M2ViLTZmMGUtNDU2Ni1hMjk2LWI1ZGZjOWQyNTczYiIsImMiOjh9" 
+            allowFullScreen="true">
+    </iframe>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>This platform provides a comprehensive view of your data, powered by Power BI. Designed to deliver real-time insights for smarter decisions.</p>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <ul>
+      <li>Interactive visualizations for data-driven insights.</li>
+      <li>Responsive design for seamless use across devices.</li>
+      <li>Real-time updates for always-accurate information.</li>
+      <li>Customizable reports tailored to your needs.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you have any questions or feedback, feel free to reach out:</p>
+    <p>Email: <a href="mailto:support@example.com">support@example.com</a></p>
+    <p>Phone: +1 (555) 123-4567</p>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>Created with ❤️ using Power BI | Hosted on <a href="https://github.com" target="_blank">GitHub Pages</a></p>
+    <p>Created with ❤️ using Power BI | Hosted on <a href="https://netlify.com" target="_blank">Netlify</a></p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power BI Dashboard</title>
+  <style>
+    /* General reset */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header styling */
+    header {
+      background-color: #0078d7; /* Power BI blue */
+      color: white;
+      padding: 1rem 0.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    header p {
+      margin: 0.2rem 0 0;
+      font-size: 1rem;
+    }
+
+    /* Navbar styling */
+    nav {
+      background: #005a9e;
+      color: white;
+      padding: 0.5rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section styling */
+    section {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #0078d7;
+    }
+
+    section p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .container iframe {
+      width: 100%;
+      height: 80vh;
+      border: none;
+      border-radius: 4px;
+    }
+
+    /* Footer styling */
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #f4f4f9;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    footer a {
+      color: #0078d7;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Power BI Dashboard</h1>
+    <p>Interactive analytics at your fingertips</p>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Main Sections -->
+  <section id="dashboard">
+    <h2>Power BI Dashboard</h2>
+    <p>Explore your data with this interactive Power BI dashboard:</p>
+    <iframe title="Years_UrbanPulse_Provincia_Web" 
+            src="https://app.powerbi.com/view?r=eyJrIjoiNjNmNDFkNDQtZDY2MC00OTU4LTkxZDMtZjRjNWNmOGVjMDMzIiwidCI6ImM5NDI0M2ViLTZmMGUtNDU2Ni1hMjk2LWI1ZGZjOWQyNTczYiIsImMiOjh9" 
+            allowFullScreen="true">
+    </iframe>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>This platform provides a comprehensive view of your data, powered by Power BI. Designed to deliver real-time insights for smarter decisions.</p>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <ul>
+      <li>Interactive visualizations for data-driven insights.</li>
+      <li>Responsive design for seamless use across devices.</li>
+      <li>Real-time updates for always-accurate information.</li>
+      <li>Customizable reports tailored to your needs.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you have any questions or feedback, feel free to reach out:</p>
+    <p>Email: <a href="mailto:support@example.com">support@example.com</a></p>
+    <p>Phone: +1 (555) 123-4567</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Created with ❤️ using Power BI | Hosted on <a href="https://netlify.com" target="_blank">Netlify</a></p>
   </footer>
 </body>
 </html>
